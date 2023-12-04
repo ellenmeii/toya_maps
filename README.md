@@ -1,79 +1,64 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# ToyaMaps - Aplikasi Persebaran Toyagama di UGM
 
-# Getting Started
+## Deskripsi
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+ToyaMaps adalah aplikasi yang dirancang khusus untuk memberikan informasi terkini mengenai titik persebaran Tayogama berupa water fountain dan water dispenser di lingkungan Universitas Gadjah Mada (UGM). Dengan menggunakan aplikasi ini, pengguna dapat dengan mudah menemukan titik lokasi yang menyediakan fasilitas Tayogama dengan fitur _routing_ yang merujuk ke Google Maps. Selain itu, pengguna juga dapat menambahkan data apabila terdapat Toyagama yang baru dipasang.
 
-## Step 1: Start the Metro Server
+Manfaat utama dari ToyaMaps adalah mempromosikan gaya hidup berkelanjutan dan meminimalkan penggunaan plastik sekali pakai dengan memudahkan akses terhadap air minum yang aman dan sehat. Dengan mengurangi pembelian botol air kemasan, pengguna dapat berkontribusi pada upaya pengurangan limbah plastik dan menjaga keberlanjutan lingkungan kampus.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+Selain itu, ToyaMaps juga dapat membantu mengoptimalkan penggunaan waktu dan energi mahasiswa serta staf kampus dalam mencari titik Toyagama dengan memberikan informasi terknini mengenai lokasi-lokasi Tayogama.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Komponen Aplikasi
 
-```bash
-# using npm
-npm start
+### 1. React Native:
+React Native adalah kerangka kerja untuk membangun aplikasi _mobile_ menggunakan JavaScript dan React. 
+### 2. JavaScript:
+JavaScript adalah bahasa pemrograman serbaguna yang digunakan untuk membangun aplikasi web interaktif dan dinamis. JavaScript adalah bahasa utama untuk membangun logika dan fungsionalitas dari aplikasi.
 
-# OR using Yarn
-yarn start
-```
+### 3. HTML:
+HTML (Hypertext Markup Language) adalah bahasa standar untuk membuat dan struktur konten web. Meskipun React Native utamanya menggunakan JavaScript, HTML digunakan bersama dengan _web view_ dalam aplikasi untuk beberapa komponen atau merender konten tertentu, terutama dalam fitur peta dan tambah data.
 
-## Step 2: Start your Application
+### 4. Leaflet.js:
+Leaflet.js adalah perpustakaan JavaScript sumber terbuka untuk peta interaktif.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+### 5. Google Spreadsheet:
+Google Spreadsheet adalah alat spreadsheet berbasis cloud yang memungkinkan pengeditan kolaboratif dan berbagi data. Google Spreadsheet digunakan untuk menyimpan dan mengelola data terkait lokasi titik Tayogama. Data ini dapat mencakup informasi seperti nama lokasi, jenis Tayogama, serta koordinat.
 
-### For Android
+### 6. Google Apps Script
+Google Apps Script adalah bahasa skrip untuk otomatisasi tugas dalam aplikasi Google Workspace.
+Apps Script digunakan untuk mengotomatisasi proses terkait sinkronisasi atau pengambilan data dari Google Spreadsheet.
 
-```bash
-# using npm
-npm run android
+### 7. FontAwesome 5:
+FontAwesome adalah kumpulan dari ikon dan toolkit. FontAwesome 5 menyediakan kumpulan ikon vektor yang dapat diperbesar untuk meningkatkan elemen visual antarmuka pengguna aplikasi.
 
-# OR using Yarn
-yarn android
-```
+### 8. GitHub:
+GitHub adalah platform berbasis web untuk kontrol versi dan kolaborasi menggunakan Git.
+GitHub digunakan sebagai sistem kontrol versi untuk melacak perubahan dalam kode sumber, mengelola kolaborasi antara pengembang, dan sebagai penyimpanan repositori _project_ ToyaMaps. 
 
-### For iOS
+## Sumber Data
+1. Peta titik persebaran Toyagama di UGM diakses dari : https://toyagama.ugm.ac.id/
+2. Hasil survei mandiri
 
-```bash
-# using npm
-npm run ios
 
-# OR using Yarn
-yarn ios
-```
+## Demo
+### Home Screen
+   ![image_2023-12-04_22-11-17](https://github.com/ellenmeii/toya_maps/assets/94775470/e95b4d3f-2fa2-4edc-9c0c-b83c8a6157b2)
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+### Toya Maps
+   ![image_2023-12-04_22-10-26](https://github.com/ellenmeii/toya_maps/assets/94775470/71ade2ff-c153-4950-b5e5-5ded87eb716f)
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+### List Data Toyagama
+   ![image_2023-12-04_22-25-11](https://github.com/ellenmeii/toya_maps/assets/94775470/9075602a-0c7d-4195-aed9-f1db1762c167)
 
-## Step 3: Modifying your App
+### Navigation Mode
+   ![image](https://github.com/ellenmeii/toya_maps/assets/94775470/757b755f-85d8-4767-99b0-b04e5d79fd83)
 
-Now that you have successfully run the app, let's modify it.
+### Add Data
+   ![image_2023-12-04_22-36-41](https://github.com/ellenmeii/toya_maps/assets/94775470/d18f5201-3249-41a1-8c1d-8cc3558c00ca)
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+### Profile
+   ![image_2023-12-04_22-11-06](https://github.com/ellenmeii/toya_maps/assets/94775470/87fd8919-a4b1-4eae-b764-4a2e232e3c57)
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
 
-## Congratulations! :tada:
+   
 
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
